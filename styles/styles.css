@@ -1,0 +1,662 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #076edb;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    list-style: none;
+    min-width: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* En-tête avec l'image de fond */
+.header {
+    position: relative;
+    background: url('../images/carcassonne.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+/* Section À propos */
+.about {
+    padding: 3rem 1.5rem; /* Ajoute de l'espacement autour de toute la section 'about' */
+    text-align: center; /* Centre le texte dans la section 'about' */
+}
+
+.about h2 {
+    font-size: 2rem; /* Définit la taille de police pour le titre dans la section 'about' */
+    margin-bottom: 2rem; /* Ajoute de l'espace sous le titre */
+}
+
+.about-content {
+    display: flex; /* Active la disposition en flexbox pour les éléments enfants */
+    flex-direction: column; /* Empile les éléments enfants verticalement */
+    align-items: center; /* Centre les éléments enfants horizontalement */
+}
+
+.about img {
+    width: 180px; /* Définit une largeur fixe pour les images dans la section 'about' */
+    height: 180px; /* Définit une hauteur fixe pour les images */
+}
+
+.about .flagImage {
+    width: 140px; /* Définit une largeur fixe pour les images dans la section 'about' */
+    height: 140px; /* Définit une hauteur fixe pour les images */
+    border-radius: 50%; /* Rend les images circulaires */
+    margin-bottom: 1.5rem; /* Ajoute de l'espace sous les images */
+}
+
+.about-content p {
+    max-width: 600px; /* Définit une largeur maximale pour les paragraphes pour une meilleure lisibilité */
+}
+
+/* Style des boutons d'onglets */
+.tab-menu {
+    list-style-type: none; /* Supprime le style de liste par défaut pour le menu d'onglets */
+    padding: 0; /* Supprime le padding */
+    display: flex; /* Active la disposition en flexbox pour les boutons d'onglets */
+    justify-content: center; /* Centre les boutons d'onglets horizontalement */
+    gap: 20px; /* Ajoute de l'espace entre les boutons d'onglets */
+    margin-bottom: 20px; /* Ajoute de l'espace sous le menu d'onglets */
+}
+
+.tab-menu .js_show_btn {
+    cursor: pointer; /* Change le curseur en pointeur lors du survol des boutons */
+    padding: 10px 20px; /* Ajoute du padding à l'intérieur des boutons */
+    background-color: #f8f8f8; /* Définit une couleur de fond claire pour les boutons */
+    border: 1px solid #d1d1d1; /* Ajoute une bordure grise claire autour des boutons */
+    border-radius: 20px; /* Arrondit les coins des boutons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ajoute des transitions fluides pour les changements de couleur de fond et de texte */
+    font-weight: bold; /* Rend le texte des boutons en gras */
+}
+
+.tab-menu .js_show_btn.selected_btn {
+    background-color: #e0e0e0; /* Change la couleur de fond pour le bouton d'onglet sélectionné */
+    border: 1px solid #808080; /* Bordure plus foncée pour le bouton d'onglet sélectionné */
+    color: #333; /* Change la couleur du texte pour le bouton d'onglet sélectionné */
+}
+
+/* Style des sections de contenu */
+.box_style {
+    display: none; /* Masque les boîtes de contenu par défaut */
+    padding: 20px; /* Ajoute du padding à l'intérieur des boîtes de contenu */
+    background-color: #f8f8f8; /* Définit une couleur de fond claire pour les boîtes de contenu */
+    border-radius: 10px; /* Arrondit les coins des boîtes de contenu */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre subtil aux boîtes */
+    width: fit-content; /* ✅ s'adapte au contenu */
+    max-width: 90%;
+    margin: 0 auto; /* ✅ centre horizontalement */
+}
+
+.box_style.about_p {
+    margin-top: 20px; /* Ajoute de l'espace au-dessus de la boîte de contenu 'about_p' */
+}
+
+.about_p {
+    display: flex; /* Active la disposition en flexbox pour la section 'about_p' */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    flex-wrap: wrap; /* Permet aux éléments enfants de passer à la ligne suivante si nécessaire */
+}
+
+.about_p:not(.hidden) {
+    display: flex; /* Affiche la section 'about_p' lorsqu'elle n'est pas masquée */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    gap: 50px; /* Ajoute de l'espace entre les éléments enfants */
+    align-items: center; /* Centre les éléments enfants verticalement */
+}
+
+/* Style des éléments individuels (langues et autres sections) */
+.about_p figure {
+    text-align: center; /* Centre le texte dans chaque figure */
+    margin: 0 15px; /* Ajoute des marges horizontales pour espacer les figures */
+}
+
+.flagImage {
+    width: 80px; /* Définit une largeur fixe pour les images de drapeaux */
+    height: 60px; /* Définit une hauteur fixe pour les images de drapeaux */
+    border-radius: 5px; /* Arrondit les coins des images de drapeaux */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute un effet d'ombre subtil aux images de drapeaux */
+}
+
+.about_p figcaption {
+    font-style: italic; /* Met en italique le texte dans les éléments figcaption */
+    color: #333; /* Définit la couleur du texte pour figcaption */
+    margin-top: 5px; /* Ajoute de l'espace au-dessus du texte de la légende */
+}
+
+.about_p figcaption p {
+    margin: 0; /* Supprime la marge par défaut des paragraphes dans figcaption */
+    font-weight: normal; /* Définit un poids de police normal pour le texte de niveau */
+}
+
+h3 {
+    font-weight: bold; /* Met les titres h3 en gras */
+    margin-top: 10px; /* Ajoute de l'espace au-dessus des titres h3 */
+}
+
+.box_style p {
+    margin-bottom: 15px; /* Ajoute de l'espace sous les paragraphes dans les boîtes de contenu */
+}
+
+/* Styles pour la section des compétences */
+.skills {
+    padding: 20px; /* Add some padding around the section */
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Stack title and articles vertically */
+    align-items: center; /* Center align the items */
+}
+
+.skills h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centrer le titre */
+}
+
+.skills-container-wrapper {
+    display: flex; /* Align the articles side by side */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    justify-content: center; /* Center the articles */
+    gap: 20px; /* Space between articles */
+}
+
+.skills article {
+    margin-bottom: 20px; /* Space between articles */
+}
+
+.skills-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 20px;
+    width: 0;
+    background-color: #333;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.skills-container {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Fixed width for each skill container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-block; /* Allows articles to be side by side */
+}
+
+.hidden {
+    display: none; /* Hide additional articles */
+}
+
+.toggle-arrow {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.skills-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.skills-container ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-container li {
+    position: relative; /* Position relative for absolute children */
+    margin: 10px 0; /* Space between list items */
+    padding: 10px; /* Padding for list items */
+    background-color: #f3f3f3; /* Background color for list items */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    overflow: hidden; /* Hide overflow */
+}
+
+.skill-name {
+    display: inline-block; /* Keep the skill name inline */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.progress-container {
+    position: relative; /* Assure que .percentage se place bien */
+    width: 100%;
+    height: 12px;
+    background-color: #e0e0e0;; /* Barre de fond grise */
+    border-radius: 5px;
+    overflow: visible; /* Assure que le pourcentage ne soit pas coupé */
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1f3b77;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+}
+
+.percentage {
+    position: absolute;
+    top: -25px; /* Ajuste bien au-dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    z-index: 10;
+    padding: 2px 5px;
+    border-radius: 3px;
+    display: none; /* Caché par défaut */
+}
+
+li:hover .progress-bar {
+    width: var(--progress-width); /* Prend la valeur dynamique */
+}
+
+li:hover .percentage {
+    opacity: 1; /* Rend visible sur hover */
+}
+
+.skills-container li:hover .skill-name {
+    opacity: 0; /* Hide skill name on hover */
+}
+
+.skills-container li:hover .progress-container {
+    display: inline-block; /* Show progress container on hover */
+}
+
+.skills-container li:hover .percentage {
+    opacity: 1;
+    visibility: visible;
+}
+
+.skills-container:nth-child(n+5) {
+    display: none;
+}
+
+/* Section Timeline */
+.diplomes {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.diplomes h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* Conteneur de la timeline */
+.timeline {
+    position: relative; /* Positioning for the timeline */
+    padding-left: 20px; /* Space for the vertical line */
+    z-index: 0;
+}
+
+/* Ligne verticale */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #ddd;
+    transform: translateX(-50%);
+}
+
+/* Style pour chaque élément de la timeline */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+/* Positionnement des éléments à gauche et à droite */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Date de chaque diplôme */
+.timeline-item header time {
+    font-size: 0.9em;
+    color: #555;
+    position: relative;
+}
+
+/* Titre du diplôme */
+.timeline-item header h3 {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    color: #333;
+}
+
+/* Description du diplôme */
+.timeline-item p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer avec l'établissement */
+.timeline-item footer {
+    font-size: 0.8em;
+    color: #6d6b6b;
+}
+
+footer .logo {
+    width: 22%; /* Ajuste la taille en pourcentage */
+    max-width: 150px; /* Définit une limite */
+    height: auto; /* Garde le ratio */
+    margin-top: 10px;
+    
+}
+
+/* Style pour les liens des certifications */
+.certif-link {
+    color: black;
+    text-decoration: none;
+}
+
+.certif-link:hover {
+    color: gray;
+}
+
+/* Suppression des puces */
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.certif-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.certif-link:hover {
+    color: black;
+}
+
+.nav-link.active {
+    color: #022e5e;
+    border-bottom: 2px solid #022e5e;
+}
+
+
+
+/* Styles pour le but */
+.but {
+    background-color: #ffffff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.but h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.but-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.but-item {
+    background-color: #ffffff;
+    border-left: 4px solid #1f3b77;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.but-item h3 {
+    color: #1f3b77;
+    margin-bottom: 10px;
+}
+
+.but-item p {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+
+
+/* Styles pour le footer */
+.footer {
+    background-color: #565757;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px; /* Ajuste selon ton logo */
+    margin-right: 15px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-nav {
+    margin-left: 20px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+}
+
+
+.experience {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.exp-card {
+    background-color: #f2f1f1;
+    border-left: 5px solid #1f3b77;
+    padding: 20px;
+    max-width: 700px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+}
+
+.exp-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1f3b77;
+}
+
+.exp-card .exp-date {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+.exp-card p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.exp-card footer {
+    font-size: 0.85rem;
+    color: #f59f32;
+}
