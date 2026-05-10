@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTRE NOM - Compétences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+
+    <div class="background-glows">
+        <div class="glow-blob glow-1"></div>
+        <div class="glow-blob glow-2"></div>
+    </div>
+
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">FM.</div>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="#" class="active">COMPÉTENCES</a></li>
+                    <li><a href="experiences.html">EXPÉRIENCES</a></li>
+                    <li><a href="projects.html">PROJETS</a></li>
+                    <li><a href="diplomas.html">FORMATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="skills-section">
+        <div class="skills-container">
+            <p class="section-number">02 / COMPÉTENCES</p>
+            <h1 class="skills-title">EXPERTISE TECHNIQUE</h1>
+            <p class="skills-subtitle">Niveau de maîtrise de mes compétences clés. Cliquez sur une carte pour voir les détails.</p>
+
+            <div class="skills-glass-layout">
+
+                <div class="sg-column">
+                    <div class="sg-label sg-label--blue">
+                        <span class="sg-label-dot"></span> Réseaux & Infrastructures
+                    </div>
+                    <div class="sg-cards">
+                        <div class="sg-card sg-card--blue" onclick="openModal('skill-modal-network')">
+                            <div class="sg-card-glow"></div>
+                            <div class="sg-card-top">
+                                <i class="fas fa-network-wired sg-icon-font" style="color: #3b82f6;"></i>
+                                <span class="sg-badge sg-badge--blue">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Réseaux</h3>
+                                <p class="sg-sub">TCP/IP · Cisco · Wireshark</p>
+                            </div>
+                        </div>
+
+                        <div class="sg-card sg-card--blue" onclick="openModal('skill-modal-telecom')">
+                            <div class="sg-card-glow"></div>
+                            <div class="sg-card-top">
+                                <i class="fas fa-wave-square sg-icon-font" style="color: #3b82f6;"></i>
+                                <span class="sg-badge sg-badge--blue">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Télécoms</h3>
+                                <p class="sg-sub">VoIP · PABX · Signaux</p>
+                            </div>
+                        </div>
+
+                        <div class="sg-card sg-card--blue" onclick="openModal('skill-modal-fibre')">
+                            <div class="sg-card-glow"></div>
+                            <div class="sg-card-top">
+                                <i class="fas fa-project-diagram sg-icon-font" style="color: #3b82f6;"></i>
+                                <span class="sg-badge sg-badge--blue">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Fibre Optique</h3>
+                                <p class="sg-sub">FTTH · OTDR · GPON</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sg-column">
+                    <div class="sg-label sg-label--orange">
+                        <span class="sg-label-dot sg-label-dot--orange"></span> Développement & Scripting
+                    </div>
+                    <div class="sg-cards">
+                        <div class="sg-card sg-card--orange" onclick="openModal('skill-modal-python')">
+                            <div class="sg-card-glow sg-card-glow--orange"></div>
+                            <div class="sg-card-top">
+                                <i class="fab fa-python sg-icon-font" style="color: #f97316;"></i>
+                                <span class="sg-badge sg-badge--orange">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Python</h3>
+                                <p class="sg-sub">Scripts · APIs · Parsing</p>
+                            </div>
+                        </div>
+
+                        <div class="sg-card sg-card--orange" onclick="openModal('skill-modal-web')">
+                            <div class="sg-card-glow sg-card-glow--orange"></div>
+                            <div class="sg-card-top">
+                                <i class="fab fa-html5 sg-icon-font" style="color: #f97316;"></i>
+                                <span class="sg-badge sg-badge--orange">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">HTML / CSS</h3>
+                                <p class="sg-sub">Responsive · Animations</p>
+                            </div>
+                        </div>
+
+                        <div class="sg-card sg-card--orange" onclick="openModal('skill-modal-linux')">
+                            <div class="sg-card-glow sg-card-glow--orange"></div>
+                            <div class="sg-card-top">
+                                <i class="fab fa-linux sg-icon-font" style="color: #f97316;"></i>
+                                <span class="sg-badge sg-badge--orange">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Linux / Bash</h3>
+                                <p class="sg-sub">CLI · Shell · Docker</p>
+                            </div>
+                        </div>
+
+                        <div class="sg-card sg-card--orange" onclick="openModal('skill-modal-sql')">
+                            <div class="sg-card-glow sg-card-glow--orange"></div>
+                            <div class="sg-card-top">
+                                <i class="fas fa-database sg-icon-font" style="color: #f97316;"></i>
+                                <span class="sg-badge sg-badge--orange">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Bases de Données</h3>
+                                <p class="sg-sub">SQL · MySQL · PostgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sg-column">
+                    <div class="sg-label sg-label--red">
+                        <span class="sg-label-dot sg-label-dot--red"></span> Cybersécurité
+                    </div>
+                    <div class="sg-cards">
+                        <div class="sg-card sg-card--red" onclick="openModal('skill-modal-cyber')">
+                            <div class="sg-card-glow sg-card-glow--red"></div>
+                            <div class="sg-card-top">
+                                <i class="fas fa-shield-halved sg-icon-font" style="color: #ef4444;"></i>
+                                <span class="sg-badge sg-badge--red">Intermédiaire</span>
+                            </div>
+                            <div class="sg-card-bottom">
+                                <h3 class="sg-title">Cybersécurité</h3>
+                                <p class="sg-sub">Kali · Nmap · OWASP</p>
+                            </div>
+                            <div class="sg-progression">
+                                <span class="sg-prog-label" style="color: #ef4444; font-size: 0.8em; font-weight: bold; display: block; margin-top: 15px;">En progression <i class="fas fa-arrow-trend-up"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="languages-glass-section">
+                
+                <div class="sg-label" style="color: var(--primary-dark); margin-bottom: 20px;">
+                    <span class="sg-label-dot" style="background-color: var(--primary-dark);"></span> Compétences Linguistiques
+                </div>
+                
+                <div class="languages-new-grid">
+                    
+                    <div class="lang-new-card">
+                        <div class="lang-glow lang-glow--fr"></div>
+                        <div class="lang-flag-wrapper">
+                            <span class="fi fi-fr lang-flag-icon"></span>
+                        </div>
+                        <div class="lang-content">
+                            <h3 class="lang-title">Français</h3>
+                            <span class="sg-badge lang-badge--fr">Natif</span>
+                        </div>
+                    </div>
+
+                    <div class="lang-new-card">
+                        <div class="lang-glow lang-glow--gb"></div>
+                        <div class="lang-flag-wrapper">
+                            <span class="fi fi-gb lang-flag-icon"></span>
+                        </div>
+                        <div class="lang-content">
+                            <h3 class="lang-title">Anglais</h3>
+                            <span class="sg-badge lang-badge--gb">Niveau B2</span>
+                            <a href="Images/TOEIC.pdf" target="_blank" rel="noopener noreferrer" class="lang-certif-link">
+                                <i class="fas fa-external-link-alt"></i> Voir TOEIC
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lang-new-card">
+                        <div class="lang-glow lang-glow--de"></div>
+                        <div class="lang-flag-wrapper">
+                            <span class="fi fi-de lang-flag-icon"></span>
+                        </div>
+                        <div class="lang-content">
+                            <h3 class="lang-title">Allemand</h3>
+                            <span class="sg-badge lang-badge--de">Niveau A2</span>
+                        </div>
+                    </div>
+
+                    <div class="lang-new-card">
+                        <div class="lang-glow lang-glow--lv"></div>
+                        <div class="lang-flag-wrapper">
+                            <span class="fi fi-lv lang-flag-icon"></span>
+                        </div>
+                        <div class="lang-content">
+                            <h3 class="lang-title">Letton</h3>
+                            <span class="sg-badge lang-badge--lv">Compréhension orale</span> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">PORTFOLIO</span>
+        </div>
+        <div class="footer-center">
+            <p>&copy; 2026 Florian Meissonnier - Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="about.html">À PROPOS</a>
+                <a href="#">COMPÉTENCES</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="skill-modal-python" class="sg-modal">
+        <div class="sg-modal-content">
+            <div class="sg-modal-header">
+                <h3>Compétence : Python</h3>
+                <button class="sg-close-btn" onclick="closeModal('skill-modal-python')">&times;</button>
+            </div>
+            <div class="sg-modal-body">
+                <div class="sg-detail-left">
+                    <i class="fab fa-python" style="font-size: 6em; color: #f97316; margin-bottom: 15px;"></i>
+                    <span class="sg-badge sg-badge--orange sg-badge-large">Niveau : Intermédiaire</span>
+                    <p>Développement de scripts d'automatisation et traitement de données.</p>
+                </div>
+                <div class="sg-detail-right">
+                    <h4>Savoir-faire</h4>
+                    <div class="sg-tech-list">
+                        <div class="sg-tech-item"><i class="fas fa-code" style="color: #3b82f6;"></i> Algorithmique avancée</div>
+                        <div class="sg-tech-item"><i class="fas fa-cogs" style="color: #3b82f6;"></i> Automatisation de tâches</div>
+                        <div class="sg-tech-item"><i class="fas fa-search" style="color: #3b82f6;"></i> Analyse de fichiers Log</div>
+                        <div class="sg-tech-item"><i class="fas fa-database" style="color: #3b82f6;"></i> Manipulation de données (Pandas)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skill-modal-cyber" class="sg-modal">
+        <div class="sg-modal-content">
+            <div class="sg-modal-header">
+                <h3>Compétence : Cybersécurité</h3>
+                <button class="sg-close-btn" onclick="closeModal('skill-modal-cyber')">&times;</button>
+            </div>
+            <div class="sg-modal-body">
+                <div class="sg-detail-left">
+                    <i class="fas fa-shield-halved" style="font-size: 6em; color: #ef4444; margin-bottom: 15px;"></i>
+                    <span class="sg-badge sg-badge--red sg-badge-large">Niveau : Intermédiaire</span>
+                    <p>Fondamentaux de la sécurité des systèmes d'information et pentesting.</p>
+                </div>
+                <div class="sg-detail-right">
+                    <h4>Savoir-faire</h4>
+                    <div class="sg-tech-list">
+                        <div class="sg-tech-item"><i class="fas fa-search" style="color: #ef4444;"></i> Méthodologie Pentest</div>
+                        <div class="sg-tech-item"><i class="fas fa-tools" style="color: #ef4444;"></i> Kali Linux, Nmap, Metasploit</div>
+                        <div class="sg-tech-item"><i class="fas fa-bug" style="color: #ef4444;"></i> Vulnérabilités Web (OWASP)</div>
+                        <div class="sg-tech-item"><i class="fas fa-network-wired" style="color: #ef4444;"></i> Attaques réseau & Contre-mesures</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skill-modal-network" class="sg-modal">
+        <div class="sg-modal-content">
+            <div class="sg-modal-header">
+                <h3>Compétence : Réseaux</h3>
+                <button class="sg-close-btn" onclick="closeModal('skill-modal-network')">&times;</button>
+            </div>
+            <div class="sg-modal-body">
+                <div class="sg-detail-left">
+                    <i class="fas fa-network-wired" style="font-size: 6em; color: #3b82f6; margin-bottom: 15px;"></i>
+                    <span class="sg-badge sg-badge--blue sg-badge-large">Niveau : Intermédiaire</span>
+                    <p>Compréhension approfondie des architectures LAN/WAN et protocoles.</p>
+                </div>
+                <div class="sg-detail-right">
+                    <h4>Savoir-faire</h4>
+                    <div class="sg-tech-list">
+                        <div class="sg-tech-item"><i class="fas fa-server" style="color: #3b82f6;"></i> Cisco Packet Tracer & IOS</div>
+                        <div class="sg-tech-item"><i class="fas fa-globe" style="color: #3b82f6;"></i> Modèle OSI & TCP/IP</div>
+                        <div class="sg-tech-item"><i class="fas fa-route" style="color: #3b82f6;"></i> Routage (RIP, OSPF, Statique)</div>
+                        <div class="sg-tech-item"><i class="fas fa-sitemap" style="color: #3b82f6;"></i> Services (DHCP, DNS, NAT)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="skill-modal-sql" class="sg-modal">
+        <div class="sg-modal-content">
+            <div class="sg-modal-header">
+                <h3>Compétence : Bases de Données</h3>
+                <button class="sg-close-btn" onclick="closeModal('skill-modal-sql')">&times;</button>
+            </div>
+            <div class="sg-modal-body">
+                <div class="sg-detail-left">
+                    <i class="fas fa-database" style="font-size: 6em; color: #f97316; margin-bottom: 15px;"></i>
+                    <span class="sg-badge sg-badge--orange sg-badge-large">Niveau : Intermédiaire</span>
+                    <p>Conception et interrogation de bases de données relationnelles.</p>
+                </div>
+                <div class="sg-detail-right">
+                    <h4>Savoir-faire</h4>
+                    <div class="sg-tech-list">
+                        <div class="sg-tech-item"><i class="fas fa-table" style="color: #f97316;"></i> Modélisation (MCD/MLD)</div>
+                        <div class="sg-tech-item"><i class="fas fa-search" style="color: #f97316;"></i> Requêtes SQL complexes</div>
+                        <div class="sg-tech-item"><i class="fas fa-server" style="color: #f97316;"></i> Gestion MySQL / PostgreSQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skill-modal-web" class="sg-modal">
+        <div class="sg-modal-content">
+            <div class="sg-modal-header">
+                <h3>Compétence : HTML / CSS</h3>
+                <button class="sg-close-btn" onclick="closeModal('skill-modal-web')">&times;</button>
+            </div>
+            <div class="sg-modal-body">
+                <div class="sg-detail-left">
+                    <i class="fab fa-html5" style="font-size: 6em; color: #f97316; margin-bottom: 15px;"></i>
+                    <span class="sg-badge sg-badge--orange sg-badge-large">Niveau : Intermédiaire</span>
+                    <p>Création d'interfaces web responsives et modernes.</p>
+                </div>
+                <div class="sg-detail-right">
+                    <h4>Savoir-faire</h4>
+                    <div class="sg-tech-list">
+                        <div class="sg-tech-item"><i class="fas fa-code" style="color: #f97316;"></i> Structure HTML5</div>
+                        <div class="sg-tech-item"><i class="fas fa-paint-brush" style="color: #f97316;"></i> CSS3 (Flexbox, Grid)</div>
+                        <div class="sg-tech-item"><i class="fas fa-mobile-alt" style="color: #f97316;"></i> Web Responsive</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden'; // Empêche le défilement de la page arrière
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto'; // Réactive le défilement
+        }
+
+        // Fermer la modale si on clique à l'extérieur du contenu
+        window.onclick = function(event) {
+            if (event.target.classList.contains('sg-modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

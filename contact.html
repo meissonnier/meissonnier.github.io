@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian Meissonnier - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+
+    <div class="background-glows">
+        <div class="glow-blob glow-1"></div>
+        <div class="glow-blob glow-2"></div>
+    </div>
+
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">FM.</div>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="skills.html">COMPÉTENCES</a></li>
+                    <li><a href="experiences.html">EXPÉRIENCES</a></li>
+                    <li><a href="projects.html">PROJETS</a></li>
+                    <li><a href="diplomas.html">FORMATION</a></li>
+                    <li><a href="#" class="active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <div class="contact-container">
+            
+            <p class="section-number">06 / CONTACT</p>
+            <h1 class="contact-title">TRAVAILLONS ENSEMBLE</h1>
+
+            <div class="contact-glass-card">
+                <p class="contact-intro">Un projet ? Une question ? N'hésitez pas à m'envoyer un message.</p>
+
+                <form action="https://formsubmit.co/florian.meissonnier.iut@gmail.com" method="POST" class="contact-new-form">
+    
+                    <input type="hidden" name="_subject" value="Nouveau message depuis ton Portfolio !">
+                    <input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_template" value="table"> 
+                    
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" name="name" placeholder="Nom Complet" required>
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fas fa-envelope input-icon"></i>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fas fa-phone input-icon"></i>
+                            <input type="tel" name="phone" placeholder="Téléphone">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="floating-badge">Motif</span>
+                            <i class="fas fa-briefcase input-icon"></i>
+                            <select name="reason">
+                                <option value="pro">Opportunité pro (Alternance/Job)</option>
+                                <option value="projet">Projet collaboratif</option>
+                                <option value="info">Demande d'information</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <i class="fas fa-tag input-icon"></i>
+                        <input type="text" name="subject" placeholder="Sujet" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <i class="fas fa-comment-alt input-icon textarea-icon"></i>
+                        <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send-message">
+                        Envoyer le message <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">PORTFOLIO</span>
+        </div>
+        <div class="footer-center">
+            <p>&copy; 2026 Florian Meissonnier - Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="about.html">À PROPOS</a>
+                <a href="skills.html">COMPÉTENCES</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

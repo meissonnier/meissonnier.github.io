@@ -3,671 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meissonnier Florian - Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- Les logos en footer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>MEISSONNIER - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Style/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">FM</a>
-        <ul class="menu">
-            <li><a href="#about" class="nav-link">À propos</a></li>
-            <li><a href="#skills" class="nav-link">Compétences</a></li>
-            <li><a href="#experience"class="nav-link">Expériences</a></li>
-            <li><a href="#diplomes" class="nav-link">Diplômes</a></li>
-            <li><a href="but.html">SAE 43</a></li>
-            <li><a href="mailto:florian.meissonnier.iut@mail.com">Me contacter</a></li>
-            
-            <!-- Menu déroulant pour le CV -->
-            <li class="dropdown">
-                <a href="#" class="cv-selector">CV ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="cv/CV_MEISSONNIIER_Florian.pdf" target="_blank">CV Français</a></li>
-                    <li><a href="cv/CV_MEISSONNIIER_Florian_International.pdf" target="_blank">CV International</a></li>
-                </ul>
-            </li>
-            
-            <!-- Menu déroulant pour la langue -->
-            <li class="dropdown">
-                <a href="#" class="language-selector">Fr ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Français</a></li>
-                    <li><a href="#">English</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
 
-    <!-- Section en-tête avec l'image de fond -->
-    <header class="header">
-        <figure class="overlay"></figure>
-        <hgroup class="header-content">
-            <h1>Florian Meissonnier</h1>
-            <p>Étudiant en Réseaux et Télécommunications</p>
-        </hgroup>
+    <div class="background-glows">
+        <div class="glow-blob glow-1"></div>
+        <div class="glow-blob glow-2"></div>
+    </div>
+
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">FM.</div>
+                <ul>
+                    <li><a href="#" class="active">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="skills.html">COMPÉTENCES</a></li>
+                    <li><a href="experiences.html">EXPÉRIENCES</a></li>
+                    <li><a href="projects.html">PROJETS</a></li>
+                    <li><a href="diplomas.html">FORMATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Section À propos -->
-    <section id="about" class="about">
-        <h2>- À propos -</h2>
-        <ul class="tab-menu">
-            <li data-nw-id-target="about_presentation_p" data-nw-classgroup="about_p" class="js_show_btn">Présentation</li>
-            <li data-nw-id-target="about_languages_p" data-nw-classgroup="about_p" class="js_show_btn selected_btn">Langues</li>
-            <li data-nw-id-target="about_softskills_p" data-nw-classgroup="about_p" class="js_show_btn">Soft skills</li>
-            <li data-nw-id-target="about_hobbies_p" data-nw-classgroup="about_p" class="js_show_btn">Passions</li>
-        </ul>
-    
-        <section class="box_style about_p hidden" id="about_presentation_p">
-            <p><b>👋 Bienvenue sur mon portfolio !</b> <br><br>
-
-                Je m’appelle Florian, je suis étudiant en <b>2ᵉ année de BUT Réseaux & Télécoms</b>. Passionné par l’informatique,
-                j’aime particulièrement la programmation et tout ce qui touche aux réseaux et à la cybersécurité.
-                <br>Au fil de mes études, j’ai appris à configurer des équipements, sécuriser des systèmes. 
-                Mais ce qui me motive le plus, c’est de relever de nouveaux défis notamment en matière de <b>cybersécurité</b>.<br><br>
-                
-                Si tu veux en savoir plus sur mon parcours et mes projets, fais un tour ici ! 🚀
-            </p>
-        </section>
-    
-        <section class="box_style about_p" id="about_languages_p">
-            <figure>
-                <img class="flagImage" src="images/drapeau-france.png" alt="Drapeau Français">
-                <figcaption>
-                    <strong>Français</strong>
-                    <p>Langue Maternelle</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="flagImage" src="images/drapeau-anglais.jpg" alt="Drapeau Anglais">
-                <figcaption>
-                    <strong>Anglais</strong>
-                    <p>Niveau B2</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="flagImage" src="images/drapeau-allemand.jpg" alt="Drapeau Allemand">
-                <figcaption>
-                    <strong>Allemand</strong>
-                    <p>Niveau A2</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="flagImage" src="images/drapeau-lettonie.jpg" alt="Drapeau Letton">
-                <figcaption>
-                    <strong>Letton</strong>
-                    <p>Compréhension orale</p>
-                </figcaption>
-            </figure>
-        </section>
-    
-        <section class="box_style about_p hidden" id="about_softskills_p">
-            <ul class="no-bullets">
-                <li><strong>Actif</strong> : Toujours prêt à explorer, expérimenter et relever de nouveaux défis.</li>
-                <li><strong>Consciencieux</strong> : J’aime faire les choses proprement et avec précision</li>
-                <li><strong>Curieux</strong> : En quête de nouvelles connaissances et compétences</li>
-                <li><strong>Rigoureux</strong> : Attentif aux détails et au travail bien fait</li>      
-            </ul>
-        </section>
-    
-        <section class="box_style about_p hidden" id="about_hobbies_p">
-            <section>
-                <h3>- Badminton -</h3>
-                <p>Joueur en compétition depuis 2018 <br>Chef de l'équipe de l'IUT</p> 
-                <img class="passions rect-img" src="images/badminton.jpg" alt="badminton">
-                <footer><a href="https://www.myffbad.fr/joueur/07209594" target="_blank"><strong> Classement </strong></a></footer> <!-- https://badmania.fr/classement-07209594.html -->
-            </section>
-            <section>
-                <h3>- Echecs -</h3> 
-                <p>Joueur occasionnel sur internet <br>Ancien joueur de compétition </p> 
-                <footer><a href="https://www.chess.com/member/fl0ri_an" target="_blank"><strong>≈800 elo </strong></a></footer>
-            </section>
-            <section>
-                <h3>- Cybersécurité -</h3> 
-                <p>Membre sur les plateformes <br>HTB & Root Me</p> 
-            </section>
-        </section>
-    
-    <!-- Section Compétences -->
-    <section id="skills" class="skills">
-        <h2><br>- Compétences -</h2>
-        <span class="skills-container-wrapper">
-            <article class="skills-container">
-                <h2>🔌 Réseaux</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">Routeurs & Switchs Cisco</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 80%;"></span>
-                            <span class="percentage">80%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">SFTP</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 70%;"></span>
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-        
-            <article class="skills-container">
-                <h2>🖥️ Informatique & Systèmes</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">Pyhton</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">C</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 60%;"></span>
-                            <span class="percentage">60%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Powershell & Bash</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 60%;"></span>
-                            <span class="percentage">60%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-            <article class="skills-container">
-                <h2>🌐 Web & Développement</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">HTML / CSS / JS</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 10%;"></span>
-                            <span class="percentage">10%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">PHP</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 70%;"></span>
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-            <article class="skills-container">
-                <h2>🔐 Cybersécurité</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">HTML / CSS / JS</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 10%;"></span>
-                            <span class="percentage">10%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">PHP</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 70%;"></span>
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
+    <main class="hero-section">
+        <div class="hero-container">
             
-            
-            <article class="skills-container">
-                <h2>📡 Télécommunications</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">HTML / CSS / JS</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 10%;"></span>
-                            <span class="percentage">10%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">PHP</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 70%;"></span>
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-            <article class="skills-container">
-                <h2>Web Development</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">HTML / CSS / JS</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 10%;"></span>
-                            <span class="percentage">10%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">PHP</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 70%;"></span>
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 75%;"></span>
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 65%;"></span>
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 90%;"></span>
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 50%;"></span>
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Node.js</span>
-                        <span class="progress-container">
-                            <span class="progress-bar" style="width: 30%;"></span>
-                            <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-            <article class="skills-container">
-                <h2>Web Development</h2>
-                <ul>
-                    <li>
-                        <span class="skill-name">HTML / CSS / JS</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 80%;"></span>
-                            
-                            <span class="percentage">80%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">PHP</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 70%;"></span>
-                            
-                            <span class="percentage">70%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Angular</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 75%;"></span>
-                         
-                            <span class="percentage">75%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">Laravel / Symfony</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 65%;"></span>
-                         
-                            <span class="percentage">65%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">React</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 90%;"></span>
-                         
-                            <span class="percentage">90%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">JavaScript</span>
-                        <span class="progress-container">
-                            
-                                <span class="progress-bar" style="width: 50%;"></span>
-                            
-                            <span class="percentage">50%</span>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="skill-name">aaaaaaaaaaa</span>
-                        <span class="progress-container">
-                        <span class="progress-bar" style="width: 30%;"></span>
-                        <span class="percentage">30%</span>
-                        </span>
-                    </li>
-                </ul>
-            </article>
-        </span>
-        <!-- Arrow for toggling visibility -->
-        <span id="toggleSkills" class="toggle-arrow">▼</span>
-    </section>
-  
-            <!-- Section Timeline -->
-    <section id="diplomes" class="diplomes">
-        <h2>- Diplômes & Certifications-</h2>
-        <nav class="timeline">
-            <!-- Diplôme 1 -->
-            <article class="timeline-item">
-                <header>
-                    <time datetime="2023 - En cours">2023 - En cours</time>
-                    <h3>BUT Réseaux & Télécoms</h3>
-                </header>
-                <p>Diplôme Universitaire d'Informatique (bac +3)</p>
-                <p>Parcours : Cybersécurité & IOM (Internet des objets et mobilité)</p>
-                <footer>Université Toulouse II - IUT de Blagnac (31), France<br><img class="logo" src="images/Logo_IUT_UT2J_couleurs.png" alt="Logo IUT"></footer>
-            </article>
-
-			<article class="timeline-item">
-                <header>
-                    <time datetime="2024 - 2025">2024 - 2025</time>
-                    <h3>Certifications Cisco</h3>
-                </header>
-                <p>• <a href="https://www.credly.com/badges/40833882-603d-4a64-963b-ea6eddfa6a69/public_url" target="_blank" class="certif-link">Ethical Hacker</a></p>
-                <p>• <a href="https://www.credly.com/badges/70a78e52-492c-46a9-9126-1de2eed9fb06/public_url" target="_blank" class="certif-link">CCNA : Switching, Routing and Wireless Essentials</a></p>
-                <p>• <a href="https://www.credly.com/badges/cc7600c9-3d98-4f39-8e0a-812834f7cf44/public_url" target="_blank" class="certif-link">CCNA : Introduction to Networks</a></p>
-                <footer><br><img class="logo" src="images/Logo_Cisco.png" alt="Logo IUT"></footer>
-            </article>
-         <article class="timeline-item">
-                <header>
-                    <time datetime="2023">2023</time>
-                    <h3>Baccalauréat Général</h3>
-                </header>
-                 <p>Diplôme en sciences - Mention Bien</p>
-                <p>Spécialités: Mathématiques & Sciences Informatiques</p>
-                <p>Option : Sport</p>
-                <footer>Lycée Jules Fil - Carcassonne (11), France<br><img class="logo" src="images/Logo_Jules_Fil.png" alt="Logo IUT"></footer>
-            </article>
-        </nav>
-    </section>
-            <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <img src="logo.png" alt="Logo" class="footer-logo">
-                <p>Copyright © 2018 - 2019 - Tous droits réservés.</p>
+            <div class="hero-visual">
+                <img src="Images/PhotoFM.jpg" alt="Photo de Florian Meissonnier" class="hero-avatar">
             </div>
-            <div class="footer-right">
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/florian__msn/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/florian-meissonnier/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <div class="hero-content">
+                <h1 class="main-title">Florian Meissonnier</h1>
+                <p class="subtitle">Étudiant en 3<sup>e</sup> année BUT Réseaux & Télécommunications, <br><strong>Alternant chez Newrest</strong></p>
+                
+                <div class="hero-description">
+                    <p>Passionné par les infrastructures réseau et la sécurité informatique, je développe mes compétences en télécommunications et cybersécurité. Mon objectif est de concevoir et sécuriser des systèmes de communication robustes et fiables.</p>
                 </div>
-                
-                <nav class="footer-nav">
-                    <strong>|</strong>
-                    <a href="mailto:florian.meissonnier.iut@mail.com">Contact</a>
-                    <a href="#">Mentions légales</a>
-                </nav>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">2000</span>
+                        <span class="stat-label">Heures de formation</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+
+                <div class="buttons hero-buttons">
+                    <a href="projects.html" class="btn btn-contact">Explorer mes projets &rarr;</a>
+                    <a href="CV/MEISSONNIIER_Florian_CV_2026.pdf" target="_blank" class="btn btn-profile">Mon CV <i class="fas fa-download"></i></a>
+                </div>
+
+                <div class="social-row">
+                    <span class="social-text">Me suivre :</span>
+                    <a href="https://www.linkedin.com/in/florian-meissonnier/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Fl0riann" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="contact.html" class="social-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+
             </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">PORTFOLIO</span>
+        </div>
+        <div class="footer-center">
+            <p>&copy; 2026 Florian Meissonnier - Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="about.html">À PROPOS</a>
+                <a href="skills.html">COMPÉTENCES</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
         </div>
     </footer>
 
-
-<script>
-
-window.addEventListener("scroll", () => {
-    let scrollPosition = window.scrollY + 100; // Ajuste selon la hauteur de ta navbar
-
-    document.querySelectorAll("section").forEach(section => {
-        if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
-            document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
-            document.querySelector(`.nav-link[href="#${section.id}"]`).classList.add("active");
-        }
-    });
-});
-
-document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href").substring(1); // Récupère l'ID de la section
-        const targetSection = document.getElementById(targetId);
-
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop - 50, // Ajuste la position (évite de cacher sous la navbar)
-                behavior: "smooth" // Animation fluide
-            });
-        }
-    });
-});
-
-document.querySelectorAll('.js_show_btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetId = btn.getAttribute('data-nw-id-target');
-            const classGroup = btn.getAttribute('data-nw-classgroup');
-
-            // Cacher toutes les sections de contenu
-            document.querySelectorAll(`.${classGroup}`).forEach(section => {
-                section.classList.add('hidden');
-            });
-
-            // Afficher la section ciblée
-            document.getElementById(targetId).classList.remove('hidden');
-
-            // Gérer le style des boutons sélectionnés
-            document.querySelectorAll('.js_show_btn').forEach(button => {
-                button.classList.remove('selected_btn');
-            });
-            btn.classList.add('selected_btn');
-        });
-    });
-    document.querySelector('.js_show_btn').click();
-
-document.querySelectorAll(".skills-container li").forEach(item => {
-    const percentageText = item.querySelector(".percentage");
-
-    item.addEventListener("mouseenter", () => {
-        percentageText.style.display = "block"; // Afficher au survol
-    });
-
-    item.addEventListener("mouseleave", () => {
-        percentageText.style.display = "none"; // Cacher quand la souris sort
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("toggleSkills");
-    const skillArticles = document.querySelectorAll(".skills-container:nth-of-type(n+5)");
-    let expanded = false;
-
-    toggleButton.addEventListener("click", () => {
-        skillArticles.forEach(article => {
-            article.style.display = expanded ? "none" : "block";
-        });
-        toggleButton.textContent = expanded ? "▼" : "▲"; // Change l'icône
-        expanded = !expanded;
-    });
-});
-
-
-</script>
-
 </body>
 </html>
-

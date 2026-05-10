@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTRE NOM - Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+
+    <div class="background-glows">
+        <div class="glow-blob glow-1"></div>
+        <div class="glow-blob glow-2"></div>
+    </div>
+
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="logo">FM.</div>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="skills.html">COMPÉTENCES</a></li>
+                    <li><a href="experiences.html">EXPÉRIENCES</a></li>
+                    <li><a href="#" class="active">PROJETS</a></li>
+                    <li><a href="diplomas.html">FORMATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="projects-section">
+        <div class="projects-container">
+            <p class="section-number">04 / PROJETS</p>
+            <h1 class="projects-title">RÉALISATIONS</h1>
+            <p class="projects-subtitle">Cliquez sur un projet pour voir les détails techniques et les étapes de réalisation.</p>
+
+            <div class="portfolio-grid">
+
+                <article class="project-new-card" onclick="openModal('modal-projet1')">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600" alt="Infrastructure Réseau">
+                        <div class="overlay">
+                            <span class="overlay-text">Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tags">
+                            <span class="tag tag-blue">Réseaux</span>
+                            <span class="tag tag-blue">Cisco</span>
+                        </div>
+                        <h3 class="card-title">Infrastructure Réseau Sécurisée</h3>
+                        <p class="text-dim">Conception et déploiement d'une architecture multi-sites avec VPN et segmentation VLAN.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-server"></i> Lab</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-new-card" onclick="openModal('modal-projet2')">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600" alt="Plateforme IoT">
+                        <div class="overlay">
+                            <span class="overlay-text">Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tags">
+                            <span class="tag tag-orange">IoT</span>
+                            <span class="tag tag-orange">Python</span>
+                        </div>
+                        <h3 class="card-title">Plateforme IoT Sécurisée</h3>
+                        <p class="text-dim">Solution de gestion d'objets connectés avec chiffrement MQTT/TLS (Raspberry Pi).</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2025</span>
+                            <span><i class="fas fa-microchip"></i> R&D</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-new-card" onclick="openModal('modal-projet3')">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=600" alt="Scanner de Vulnérabilités">
+                        <div class="overlay">
+                            <span class="overlay-text">Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tags">
+                            <span class="tag tag-red">Cyber</span>
+                            <span class="tag tag-red">Pentest</span>
+                        </div>
+                        <h3 class="card-title">Scanner de Vulnérabilités</h3>
+                        <p class="text-dim">Outil automatisé d'analyse réseau avec génération de rapports détaillés en Bash/Python.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-terminal"></i> Scripting</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-new-card" onclick="openModal('modal-projet4')">
+                    <div class="card-img-container">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" alt="IDS">
+                        <div class="overlay">
+                            <span class="overlay-text">Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tags">
+                            <span class="tag tag-red">Cyber</span>
+                            <span class="tag tag-blue">Réseaux</span>
+                        </div>
+                        <h3 class="card-title">Système de Détection d'Intrusion</h3>
+                        <p class="text-dim">Implémentation d'un IDS personnalisé (Snort + ELK) avec alertes en temps réel.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-shield-alt"></i> SOC</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <span class="footer-logo">PORTFOLIO</span>
+        </div>
+        <div class="footer-center">
+            <p>&copy; 2026 Florian Meissonnier - Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="about.html">À PROPOS</a>
+                <a href="skills.html">COMPÉTENCES</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="modal-projet1" class="modal" aria-hidden="true">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <div class="header-title">
+                    <h3>Infrastructure Réseau Sécurisée</h3>
+                    <span class="badge-category">Réseaux Cisco</span>
+                </div>
+                <div class="header-controls">
+                    <span class="page-counter" id="counter-projet1">1 / 3</span>
+                    <button class="close-btn" onclick="closeModal('modal-projet1')">&times;</button>
+                </div>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track" id="track-projet1">
+                    
+                    <div class="carousel-slide">
+                        <div class="text-content">
+                            <h4><i class="fas fa-building"></i> Contexte & Objectifs</h4>
+                            <p class="intro-text">Conception d'une architecture multi-sites sécurisée pour une entreprise fictive. Mise en place d'un réseau résilient avec segmentation logique et sécurisation des accès distants.</p>
+                            
+                            <div class="project-brief-grid">
+                                <div class="info-box">
+                                    <h5><i class="fas fa-bullseye"></i> Objectifs Critiques</h5>
+                                    <ul class="check-list custom-bullet">
+                                        <li>Segmentation VLAN par service.</li>
+                                        <li>Interconnexion de 3 sites distants via VPN IPsec.</li>
+                                        <li>Redondance des liens (HSRP, EtherChannel).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="slide-grid">
+                            <div class="text-content">
+                                <h4><i class="fas fa-sitemap"></i> Architecture & Plan d'Adressage</h4>
+                                <p>Optimisation du plan d'adressage via VLSM.</p>
+                                
+                                <div class="accordion-group">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                                            <span>Plan des VLANs (Siège Social)</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <ul>
+                                                <li><strong>VLAN 10 (Admin) :</strong> 10.0.10.0/24</li>
+                                                <li><strong>VLAN 20 (Compta) :</strong> 10.0.20.0/24</li>
+                                                <li><strong>VLAN 99 (Management) :</strong> 10.0.99.0/24</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                                            <span>Sécurité Périphérique</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <p>Déploiement d'un Pare-feu ASA. Configuration du NAT (Dynamic PAT) et création d'une zone DMZ pour les serveurs Web accessibles depuis l'extérieur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-column">
+                                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=600" class="slide-img shadow-effect" alt="Topologie">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="text-content" style="width: 100%;">
+                            <h4><i class="fas fa-terminal"></i> Configurations Techniques (IOS)</h4>
+                            
+                            <div class="code-tabs">
+                                <div class="tab-header">
+                                    <button class="tab-btn active" onclick="openTab(event, 'code-vpn')">VPN IPsec</button>
+                                    <button class="tab-btn" onclick="openTab(event, 'code-vlan')">Trunk & VLAN</button>
+                                </div>
+                                <div id="code-vpn" class="tab-content active">
+<pre>
+! Configuration VPN Phase 1 (ISAKMP)
+crypto isakmp policy 10
+ encr aes 256
+ hash sha256
+ authentication pre-share
+ group 14
+crypto isakmp key SECRETKEY address 203.0.113.2
+
+! Configuration Phase 2 (IPsec)
+crypto ipsec transform-set IPSEC-SET esp-aes 256 esp-sha256-hmac
+</pre>
+                                </div>
+                                <div id="code-vlan" class="tab-content">
+<pre>
+interface GigabitEthernet0/1
+ description UPLINK_VERS_CORE
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,99
+ spanning-tree portfast trunk
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-btn" onclick="moveSlide('track-projet1', -1, 'dots-projet1', 'counter-projet1')"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots" id="dots-projet1">
+                    <span class="dot active" onclick="goToSlide('track-projet1', 0, 'dots-projet1', 'counter-projet1')"></span>
+                    <span class="dot" onclick="goToSlide('track-projet1', 1, 'dots-projet1', 'counter-projet1')"></span>
+                    <span class="dot" onclick="goToSlide('track-projet1', 2, 'dots-projet1', 'counter-projet1')"></span>
+                </div>
+                <button class="carousel-btn" onclick="moveSlide('track-projet1', 1, 'dots-projet1', 'counter-projet1')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-projet3" class="modal" aria-hidden="true">
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <div class="header-title">
+                    <h3>Scanner de Vulnérabilités Automatisé</h3>
+                    <span class="badge-category" style="background:#fef2f2; color:#ef4444; border:1px solid #fecaca;">Cyber / Python</span>
+                </div>
+                <div class="header-controls">
+                    <span class="page-counter" id="counter-projet3">1 / 2</span>
+                    <button class="close-btn" onclick="closeModal('modal-projet3')">&times;</button>
+                </div>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track" id="track-projet3">
+                    
+                    <div class="carousel-slide">
+                        <div class="text-content" style="width: 100%;">
+                            <h4><i class="fab fa-python"></i> Automatisation avec Nmap & Bash</h4>
+                            <p>Le script effectue un scan discret, parse les résultats XML, et les compare avec une base de données de CVE connues.</p>
+                            <div class="code-tabs">
+                                <div class="tab-header">
+                                    <button class="tab-btn active">scan_auto.sh</button>
+                                </div>
+                                <div class="tab-content active">
+<pre>
+#!/bin/bash
+TARGET=$1
+echo "[+] Démarrage du scan furtif sur $TARGET"
+nmap -sS -sV -T3 -oX report.xml $TARGET
+python3 parse_and_vuln.py report.xml > final_report.html
+echo "[+] Scan terminé. Rapport HTML généré."
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="text-content" style="width: 100%;">
+                            <h4><i class="fas fa-table"></i> Exemple de Rapport Généré (Fictif)</h4>
+                            <p>Voici le type d'information extraite automatiquement par le script Python lors du parsing :</p>
+                            
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden;">
+                                <thead style="background: var(--primary-dark); color: white; text-align: left;">
+                                    <tr>
+                                        <th style="padding: 12px;">Port / Service</th>
+                                        <th style="padding: 12px;">Version détectée</th>
+                                        <th style="padding: 12px;">Vulnérabilité (CVE)</th>
+                                        <th style="padding: 12px;">Criticité</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 12px;">21 / FTP</td>
+                                        <td style="padding: 12px;">vsftpd 2.3.4</td>
+                                        <td style="padding: 12px;">CVE-2011-2523 (Backdoor)</td>
+                                        <td style="padding: 12px;"><span class="tag tag-red">Critique</span></td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #eee;">
+                                        <td style="padding: 12px;">80 / HTTP</td>
+                                        <td style="padding: 12px;">Apache 2.4.49</td>
+                                        <td style="padding: 12px;">CVE-2021-41773 (Path Traversal)</td>
+                                        <td style="padding: 12px;"><span class="tag tag-red">Élevée</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 12px;">22 / SSH</td>
+                                        <td style="padding: 12px;">OpenSSH 8.2p1</td>
+                                        <td style="padding: 12px;">Aucune faille critique connue</td>
+                                        <td style="padding: 12px;"><span class="tag tag-blue">Faible</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-btn" onclick="moveSlide('track-projet3', -1, 'dots-projet3', 'counter-projet3')"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots" id="dots-projet3">
+                    <span class="dot active" onclick="goToSlide('track-projet3', 0, 'dots-projet3', 'counter-projet3')"></span>
+                    <span class="dot" onclick="goToSlide('track-projet3', 1, 'dots-projet3', 'counter-projet3')"></span>
+                </div>
+                <button class="carousel-btn" onclick="moveSlide('track-projet3', 1, 'dots-projet3', 'counter-projet3')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        /* --- OUVRIR / FERMER MODALES --- */
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Réinitialiser le carrousel à la slide 0 lors de l'ouverture
+            let trackId = id.replace('modal-', 'track-');
+            let dotsId = id.replace('modal-', 'dots-');
+            let counterId = id.replace('modal-', 'counter-');
+            if(document.getElementById(trackId)) {
+                goToSlide(trackId, 0, dotsId, counterId);
+            }
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        /* --- CARROUSELS (SLIDERS) --- */
+        function moveSlide(trackId, direction, dotsId, counterId) {
+            const track = document.getElementById(trackId);
+            const dots = document.getElementById(dotsId).children;
+            const slidesCount = dots.length;
+            
+            // Trouver la slide active actuelle basée sur le point actif
+            let currentIndex = 0;
+            for(let i=0; i<dots.length; i++) {
+                if(dots[i].classList.contains('active')) currentIndex = i;
+            }
+
+            let newIndex = currentIndex + direction;
+            if (newIndex < 0) newIndex = slidesCount - 1; // Boucle au début
+            if (newIndex >= slidesCount) newIndex = 0; // Boucle à la fin
+
+            goToSlide(trackId, newIndex, dotsId, counterId);
+        }
+
+        function goToSlide(trackId, index, dotsId, counterId) {
+            const track = document.getElementById(trackId);
+            const dots = document.getElementById(dotsId).children;
+            
+            // Déplacer la piste (100% de largeur par slide)
+            track.style.transform = `translateX(-${index * 100}%)`;
+
+            // Mettre à jour les points
+            for(let i=0; i<dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            dots[index].classList.add('active');
+
+            // Mettre à jour le compteur (ex: "2 / 3")
+            if(counterId && document.getElementById(counterId)) {
+                document.getElementById(counterId).innerText = `${index + 1} / ${dots.length}`;
+            }
+        }
+
+        /* --- ONGLETS (TABS) POUR LE CODE --- */
+        function openTab(evt, tabName) {
+            // Trouver le conteneur global des tabs parent du bouton cliqué
+            let tabContainer = evt.currentTarget.closest('.code-tabs');
+            
+            // Cacher tout le contenu dans CE composant
+            let tabcontent = tabContainer.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Retirer "active" des boutons dans CE composant
+            let tablinks = tabContainer.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // Activer le tab ciblé et le bouton cliqué
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        /* --- ACCORDÉONS --- */
+        function toggleAccordion(element) {
+            element.classList.toggle("active");
+            let content = element.nextElementSibling;
+            let icon = element.querySelector("i");
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove("fa-chevron-up");
+                icon.classList.add("fa-chevron-down");
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove("fa-chevron-down");
+                icon.classList.add("fa-chevron-up");
+            }
+        }
+    </script>
+</body>
+</html>
